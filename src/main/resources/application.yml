@@ -1,9 +1,9 @@
-logging:
-  pattern:
-#    # 只输出日期和内容
-  console: "%d - %msg%n"
-  # 输出路径，默认文件名为spring.log
-  # path: C:\Users\Administrator\Desktop
-  # 指定文件名 1. 全路径 2. 相对路径以当前路径为basePath 3. file优先级大于path，如果同时使用会覆盖path
-  file: d:\logs\start.log
-  level: debug
+#logging:
+#  level: debug #生产用INFO
+#  pattern:
+##    # 只输出日期和内容
+#  console: "%d - %msg%n"
+#  # 输出路径，默认文件名为spring.log
+#  # path: C:\Users\Administrator\Desktop
+#  # 指定文件名 1. 全路径 2. 相对路径以当前路径为basePath 3. file优先级大于path，如果同时使用会覆盖path
+#  file: d:\logs\start.log
