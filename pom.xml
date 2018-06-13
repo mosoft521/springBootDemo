@@ -60,19 +60,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
-            <!--&lt;!&ndash; 排除jul,jcl日志包 &ndash;&gt;
+            <!-- 排除jul,jcl日志包 -->
             <exclusions>
-                 &lt;!&ndash;排除jul日志包&ndash;&gt;
                 <exclusion>
                     <artifactId>jul-to-slf4j</artifactId>
                     <groupId>org.slf4j</groupId>
                 </exclusion>
-                &lt;!&ndash;排除jcl日志包：org.apache.commons.logging&ndash;&gt;
-                <exclusion>
-                    <artifactId>jcl-over-slf4j</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-            </exclusions>-->
+                <!--tomcat需要jcl-->
+                <!--<exclusion>-->
+                    <!--<artifactId>jcl-over-slf4j</artifactId>-->
+                    <!--<groupId>org.slf4j</groupId>-->
+                <!--</exclusion>-->
+            </exclusions>
         </dependency>
         <!-- 加上这个才能辨认到log4j2.yml文件 -->
         <!--<dependency>-->
