@@ -21,7 +21,9 @@ public class HelloController {
     @RequestMapping("/hello")
     @ResponseBody
     String home() {
-        LOGGER.info("Hello world!");
+        LOGGER.info("#info: Hello world!");
+        LOGGER.warn("#warn: Hello world!");
+        LOGGER.error("#error: Hello world!");
         return "Hello ,spring boot!";
     }
 }

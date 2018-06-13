@@ -7,3 +7,5 @@
 #  # path: C:\Users\Administrator\Desktop
 #  # 指定文件名 1. 全路径 2. 相对路径以当前路径为basePath 3. file优先级大于path，如果同时使用会覆盖path
 #  file: d:\logs\start.log
+logging:
+  config: Log4j2
