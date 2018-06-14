@@ -54,7 +54,15 @@
         <logger name="org.springframework" level="INFO"/>
         <logger name="org.mybatis" level="INFO"/>
         <!--自定义-->
-        <logger name="com.gmail.mosoft521.controller" level="INFO" additivity="false">
+        <logger name="com.gmail.mosoft521.controller.Log4j2Controller" level="INFO" additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="sbd"/>
+            <appender-ref ref="RollingFileInfo"/>
+            <appender-ref ref="RollingFileWarn"/>
+            <appender-ref ref="RollingFileError"/>
+        </logger>
+        <!--自定义-->
+        <logger name="com.gmail.mosoft521.controller.JulController" level="INFO" additivity="false">
             <appender-ref ref="Console"/>
             <appender-ref ref="sbd"/>
             <appender-ref ref="RollingFileInfo"/>

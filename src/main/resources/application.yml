@@ -9,3 +9,9 @@
 #  file: d:\logs\start.log
 logging:
   config: Log4j2
+
+#java:
+#  util:
+#    logging:
+#      ConsoleHandler:
+#        level: INFO
