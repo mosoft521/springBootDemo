@@ -9,18 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@EnableAutoConfiguration
 public class HelloController {
-    private static Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(HelloController.class, args);
-        //运行之后在浏览器中访问：http://localhost:8080/hello
-    }
+    //推荐使用SLF4J接口来调用日志
+    private static Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
     @RequestMapping("/hello")
     @ResponseBody
-    String home() {
+    String hello() {
         LOGGER.info("#info: Hello world!");
         LOGGER.warn("#warn: Hello world!");
         LOGGER.error("#error: Hello world!");
